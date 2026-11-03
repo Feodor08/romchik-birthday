@@ -65,3 +65,44 @@
 @keyframes red-flash{0%,100%{opacity:0}50%{opacity:.72}}
 @keyframes eyes-breathe{50%{opacity:.45;text-shadow:0 0 4px #ff243f,0 0 15px #ff243f}}
 @media(prefers-reduced-motion:reduce){.wolf-button svg,.wolf-eyes{animation:none}.wolf-scare.is-active{animation:none;visibility:visible;opacity:1;transform:none}}
+.friend-card h3{color:var(--mint);transition:color .25s,text-shadow .25s}
+.friend-card:hover h3{color:var(--green);text-shadow:0 0 18px rgba(41,230,154,.35)}
+.secret-card h3,.secret-card:hover h3{color:#ff7180}
+@media(max-width:600px){
+  html{scroll-padding-top:68px}
+  .topbar{height:62px;padding:0 5vw;gap:12px}
+  .brand{font-size:9px;letter-spacing:.1em;white-space:nowrap}
+  .case{font-size:7px;letter-spacing:.06em;margin-left:5px}
+  .top-link{font-size:8px;letter-spacing:.06em;white-space:nowrap}
+  .section-wrap{padding-left:6vw;padding-right:6vw}
+  .hero{min-height:0;height:auto;max-height:none;padding-top:112px;padding-bottom:350px;overflow:hidden}
+  .hero-copy{width:100%;min-width:0}
+  .eyebrow{font-size:8px;letter-spacing:.13em}
+  h1{font-size:clamp(50px,13vw,68px);line-height:.95;margin:27px 0 17px;overflow-wrap:normal}
+  .aliases{font-size:11px;line-height:1.75}
+  .intro{font-size:12px;line-height:1.75;margin:16px 0 20px}
+  .button{gap:22px;padding:14px 16px;font-size:10px}
+  .tiny-note{font-size:9px;line-height:1.6}
+  .hero-art{width:88%;height:auto;aspect-ratio:1.55;min-height:0;right:6%;bottom:54px}
+  .art-label{top:13px;left:14px;font-size:8px}
+  .scroll-hint{left:6vw;bottom:25px;font-size:8px}
+  .evidence,.friends,.projects{padding-top:76px;padding-bottom:78px}
+  .evidence-grid{margin-top:28px;gap:17px}
+  .evidence h2,.friends h2,.projects h2{font-size:clamp(38px,10vw,48px);line-height:1.08}
+  .evidence-grid p,.projects-intro{font-size:12px;line-height:1.8}
+  .stamps{gap:7px;margin-top:28px}
+  .stamps span{font-size:8px;padding:9px}
+  .friends-heading{margin:28px 0 30px}
+  .friends-heading p{font-size:11px;line-height:1.7;margin-top:17px}
+  .cards{grid-template-columns:1fr;gap:10px}
+  .friend-card{min-height:138px;padding:18px}
+  .card-icon{margin-top:15px;font-size:19px}
+  .friend-card h3{font-size:19px;margin:8px 0 4px}
+  .friend-card p{font-size:9px;margin:0}
+  .card-arrow{right:17px;top:16px}
+  .finale{padding:82px 6vw}
+  .finale h2{font-size:clamp(49px,13vw,68px);line-height:1.02}
+  .finale-inner>p{font-size:12px;line-height:1.8}
+  footer{padding:20px 5vw;gap:10px;font-size:7px;letter-spacing:.07em;flex-wrap:wrap}
+}
+@media(max-width:360px){.case{display:none}.top-link{font-size:7px}.hero{padding-bottom:320px}h1{font-size:49px}.stamps span{font-size:7px;padding:8px 7px}}
